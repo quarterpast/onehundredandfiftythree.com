@@ -201,9 +201,12 @@ table { border-collapse: collapse; border-spacing: 0; }
    Author: 
    ========================================================================== */
 
-
 body {
-  background: white url(img/matt.jpg) no-repeat auto 100%;
+  background-attachment: fixed;
+  background-image: url(../img/matt.jpg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 }
 
 
