@@ -200,16 +200,32 @@ table { border-collapse: collapse; border-spacing: 0; }
    Primary styles
    Author: 
    ========================================================================== */
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('roboto-condensed-webfont.eot');
+    src: url('roboto-condensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('roboto-condensed-webfont.woff') format('woff'),
+         url('roboto-condensed-webfont.ttf') format('truetype'),
+         url('roboto-condensed-webfont.svg#RobotoCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body {
   background-attachment: fixed;
   background-image: url(../img/matt.jpg);
-  background-position: top right;
+  background-position: bottom left;
   background-repeat: no-repeat;
   background-size: auto 100%;
 }
 
+body > h1 {
+  text-align: right;
+  margin: 1em;
 
+  font: 5em/0 "Roboto Condensed";
+}
 
 
 
