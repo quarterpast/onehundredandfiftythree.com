@@ -226,6 +226,7 @@ body, html {
 }
 
 aside img {
+  pointer-events: none;
   display: block;
   width: 100%;
 }
@@ -253,7 +254,6 @@ a:link {
   text-decoration: none;
 }
 header, section, footer {
-  text-align: right;
   margin: 1em 1em 0;
   border-bottom: 1px black dotted;
 }
@@ -281,16 +281,18 @@ section li h1 {
   margin-top: -0.4em;
   color: black;
   font-family: "Roboto Thin Italic";
-  padding-left: 0.5em;
+  padding: 0 0.5em 0 0;
   font-size: 2em;
-  float: right;
+  float: left;
 }
 footer {
   border: 0px none;
+  font-size: 0.9em;
+  color: gray;
 }
 footer h1 {
   font-family: "Roboto Thin Italic";
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 /* =============================================================================
@@ -333,6 +335,7 @@ footer h1 {
 
 @media only screen and (min-width: 769px) {
   aside {
+    height: 100%;
     z-index: 0;
     position: absolute;
     top: 0;
@@ -342,13 +345,19 @@ footer h1 {
     height: 100%;
     width: auto;
   }
+  section li h1 {
+    margin-top: -0.4em;
+    color: black;
+    padding: 0 0 0 0.5em;
+    float: right;
+  }
   header, section, footer {
     z-index: 1;
     position: relative;
     text-align: right;
     float: right;
     clear: right;
-    margin: 1em 1em 0;
+    text-align: right;
     max-width: 60%;
   }
 }
